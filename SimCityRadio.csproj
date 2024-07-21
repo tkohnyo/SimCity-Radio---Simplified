@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <Title>SimCity Radio</Title>
+		<AssemblyTitle>$(Title)</AssemblyTitle>
+        <Product>$(Title)</Product>
+        <OutputType>Library</OutputType>
+        <TargetFramework>net472</TargetFramework>
+        <Configurations>Debug;Release</Configurations>
+        <langVersion>latest</langVersion>
+        <!-- The folder where Game.dll is located. Set it only if the game is not installed in the default location, otherwise keep it empty -->
+        <CustomManagedPath>$(CSII_INSTALLATIONPATH)\Cities2_Data\Managed</CustomManagedPath>
+        <!-- <CustomManagedPath></CustomManagedPath> -->
+        <PDXAccountDataPath>$(USERPROFILE)\Desktop\pdx_account.txt</PDXAccountDataPath>
+        <PublishConfigurationPath>Properties\PublishConfiguration.xml</PublishConfigurationPath>
+        <AutoGenerateBindingRedirects>True</AutoGenerateBindingRedirects>
+    </PropertyGroup>
+    <!-- Imports must be after PropertyGroup block -->
+    <Import Project="$([System.Environment]::GetEnvironmentVariable('CSII_TOOLPATH', 'EnvironmentVariableTarget.User'))\Mod.props" />
+    <Import Project="$([System.Environment]::GetEnvironmentVariable('CSII_TOOLPATH', 'EnvironmentVariableTarget.User'))\Mod.targets" />
+    <Target Name="GetCustomRadiosFiles" AfterTargets="DeployWIP">
+        <ItemGroup>
+            <AdditionalFilesToDeploy Include="CustomRadios\**\*.*" />
+        </ItemGroup>
+        <Copy SourceFiles="@(AdditionalFilesToDeploy)" DestinationFiles="@(AdditionalFilesToDeploy->'$(DeployDir)\CustomRadios\%(RecursiveDir)%(Filename)%(Extension)')" />
+    </Target>
+    <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+        <PackageReference Include="YamlDotNet" Version="15.1.2" />
+        <PackageReference Include="Lib.Harmony" Version="2.2.2" />
+    </ItemGroup>
+    <ItemGroup>
+        <Reference Include="$(UserDataPath)\.cache\Mods\mods_subscribed\75862_*\ExtendedRadio.dll" Private="False" />
+        <Reference Include="$(CustomManagedPath)\Colossal.*.dll" Private="False" />
+        <Reference Include="$(CustomManagedPath)\Game*.dll" Private="False" />
+        <Reference Include="$(CustomManagedPath)\Unity.*.dll" Private="False" />
+        <Reference Include="cohtml.Net" Private="False" />
+        <Reference Include="Game" Private="False" />
+        <Reference Include="Colossal.Core" Private="False" />
+        <Reference Include="Colossal.Logging" Private="False" />
+        <Reference Include="Colossal.IO.AssetDatabase" Private="False" />
+        <Reference Include="Colossal.UI" Private="False" />
+        <Reference Include="Colossal.UI.Binding" Private="False" />
+        <Reference Include="Colossal.Localization" Private="False" />
+        <Reference Include="UnityEngine.CoreModule" Private="False" />
+        <Reference Include="Unity.Burst" Private="False" />
+        <Reference Include="Unity.Collections" Private="False" />
+        <Reference Include="Unity.Entities" Private="False" />
+        <Reference Include="Unity.Mathematics" Private="False" />
+        <Reference Update="System" Private="False" />
+        <Reference Update="System.Core" Private="False" />
+        <Reference Update="System.Data" Private="False" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="$(ModPropsFile)" Link="Properties\Mod.props" />
+        <None Include="$(ModTargetsFile)" Link="Properties\Mod.targets" />
+    </ItemGroup>
+</Project>

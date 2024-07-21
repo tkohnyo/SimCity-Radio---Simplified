@@ -1,0 +1,7 @@
+{
+  "name": "SimCity Radio [DEV FORK]",
+  "description": "Tune in to future jazz classics from SimCity 3000 and SimCity 4",
+  "descriptionId": "Tune in to future jazz classics from SimCity 3000 and SimCity 4",
+  "allowAds": true,
+  "icon": "coui://simcityradio/CustomRadios/SimCityRadio/simcity-network.svg"
+}
