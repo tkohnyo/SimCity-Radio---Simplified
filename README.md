@@ -1,6 +1,6 @@
 # SimCity Radio [FORK - simplified]
 I forked the Original mod [SimCity Radio](https://mods.paradoxplaza.com/mods/76446/Windows) because it wasn't working anymore,
-simplified (in my eyes) the code, removed the ads and returned to the default config ways as described here:[ExtendedRadio](https://github.com/AlphaGaming7780/ExtendedRadio/wiki/Custom-Radio)
+simplified (in my eyes, also dumbified) the code, removed the ads and returned to the default config ways as described here:[ExtendedRadio](https://github.com/AlphaGaming7780/ExtendedRadio/wiki/Custom-Radio)
 
 ## Notes
 
