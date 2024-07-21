@@ -3,14 +3,15 @@
     <DisplayName Value="SimCity Radio [FORK - simplified]" />
     <ShortDescription Value="Music from SimCity 3000 and SimCity 4" />
     <LongDescription>
-		# SimCity Radio [FORK - simplified]
+		
+		# SimCity Radio FORK - simplified
+		
 		I forked the Original mod [SimCity Radio](https://mods.paradoxplaza.com/mods/76446/Windows) because it wasn't working anymore,
-		simplified (in my eyes) the code, removed the ads and returned to the default config ways as described here:[ExtendedRadio](https://github.com/AlphaGaming7780/ExtendedRadio/wiki/Custom-Radio)
+		simplified (in my eyes) the code, removed the ads and returned to the default config ways as described here: [ExtendedRadio](https://github.com/AlphaGaming7780/ExtendedRadio/wiki/Custom-Radio)
 
 		## Notes
 
 		Detailed information on the [SimCity 3000](https://www.discogs.com/release/5394990-Various-SimCity-3000), [SimCity 4](https://www.discogs.com/release/7964896-Various-SimCity-4), and [SimCity 4: Rush Hour](https://www.discogs.com/release/3849468-Various-SimCity-4-Rush-Hour-Soundtrack) soundtracks can be found on discogs.
-
 
 		**DISCLAIMER**
 
@@ -28,10 +29,11 @@
     <ForumLink Value="" />
     <GameVersion Value="*" />
     <Dependency Id="75862" />
-    <ModVersion Value="2.0.0" />
+    <ModVersion Value="2.0.0-1" />
     <ChangeLog>
-        fix: forked from OP and updated
-    </ChangeLog>
+		update: updated info
+		fix: forked from OP and updated
+	</ChangeLog>
     <ExternalLink Type=""
                   Url="" />
     <ExternalLink Type="github"
