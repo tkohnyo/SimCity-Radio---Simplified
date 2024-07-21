@@ -14,7 +14,7 @@
 
 		**DISCLAIMER**
 
-		Credits to the original creator [defnotrobbie](https://mods.paradoxplaza.com/authors/defnotrobbie?orderBy=desc&sortBy=best)
+		Credits to the original creator [defnotrobbie](https://mods.paradoxplaza.com/authors/defnotrobbie)
 		for creating the original mod [SimCity Radio](https://mods.paradoxplaza.com/mods/76446/Windows)
 
 		This game modification is a non-commercial, fan-made project and is not affiliated with or endorsed by the original musicians or copyright holders. The songs included in this modification are for entertainment purposes only and are not being used for profit. All rights and credits go to the original artists and copyright holders.
@@ -28,9 +28,9 @@
     <ForumLink Value="" />
     <GameVersion Value="*" />
     <Dependency Id="75862" />
-    <ModVersion Value="1.3.1" />
+    <ModVersion Value="2.0.0" />
     <ChangeLog>
-        fix: make compatible with ExtendedRadio 1.3
+        fix: forked from OP and updated
     </ChangeLog>
     <ExternalLink Type=""
                   Url="" />
